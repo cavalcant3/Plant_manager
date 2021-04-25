@@ -5,8 +5,10 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { Welcome } from '../Welcome';
 import { UserIdentification } from '../UserIdentification';
 import { Confirmation } from '../Confirmation';
+import { PlantSelect } from '../PlantSelect';
 
 import colors from '../styles/colors';
+
 
 const stackRoutes = createStackNavigator();
 
@@ -32,6 +34,10 @@ const AppRoutes: React.FC = () => (
     <stackRoutes.Screen 
       name="Confirmation"
       component={Confirmation}
+  />
+    <stackRoutes.Screen 
+      name="PlantSelect"
+      component={PlantSelect}
   />
 
 
